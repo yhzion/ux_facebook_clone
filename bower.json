@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "authors": [
+    "yhzion <gplusit@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "Ionicons": "ionicons#~2.0.1",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SNS게시판</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sns.js"></script>
+    <link rel="stylesheet" href="css/sns.css" type="text/css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css" type="text/css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="post_header">
+                <span class="item"><i class="ion-edit"></i> Update Status</span>
+                <span class="horizontal_split"></span>
+                <span class="item"><i class="ion-image"></i> Add Photos/Video</span>
+                <span class="horizontal_split"></span>
+                <span class="item"><i class="ion-ios-albums"></i> Create Photo Album</span>
+            </div>
+            <div class="split"></div>
+            <div class="post_body">
+                <div class="profile_pic">
+                    <img src="http://bit.ly/1R7sh1v" width="40" height="40" alt="profile_pic">
+                </div>
+                <div class="post_text">
+                    What's on your mind?
+                </div>
+            </div>
+            <div class="split"></div>
+            <div class="post_footer">
+                <div class="icons">
+                    <i class="ion-camera"></i>
+                    <i class="ion-person-add"></i>
+                    <i class="ion-happy"></i>
+                    <i class="ion-location"></i>
+                </div>
+                <div class="buttons">
+                    <button class="white"><i class="ion-earth"></i> Public <i class="ion-arrow-down-b"></i></button>
+                    <button class="blue">Post</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="items">
+            <div class="item" style="display:none;">
+                <div class="item_header">
+                    <div class="profile_pic">
+                        <img src="http://bit.ly/1KVP6Ww" width="40" height="40" alt="profile_pic">
+                    </div>
+                    <div class="profile_name">
+                        홍길동
+                    </div>
+                    <div class="item_time_text">
+                        24 mins · <i class="ion-earth"></i>
+                    </div>
+                </div>
+                <div class="item_body">
+                    <div class="item_body_text">
+                        <p>
+                            2010년 구글은 검열 문제 등으로 중국 정부와의 마찰을 빚다 중국에서 철수했었습니다. 그러다 2014년부터 다시 중국 시장에 진출하기 위해 노력했었는데요, 빠르면 3월부터 중국에서 다시 구글 플레이를 만나볼 수 있을 듯합니다.
+                            세계 최대의 스마트폰 시장으로 부상한 중국인 만큼, 구글 플레이의 중국 재진출 소식에 세계 IT 기업들의 걱정과 기대가 교차하고 있습니다.
+                            이러한 상황에서 중국 국내의 분위기를 가늠해볼 수 있는 귀한 글이 있기에 소개합니다....
+                            <span class="more">See More</span>
+                        </p>
+                    </div>
+                    <div class="item_body_images">
+                        <img class="scaledImageFitWidth img" src="http://bit.ly/20DiQJP" alt="Humans of Seoul's photo.">
+                    </div>
+                    <div class="item_body_stat">
+                        <span>6 Likes</span>
+                        <span>1 Share</span>
+                    </div>
+                </div>
+                <div class="split"></div>
+                <div class="item_footer">
+                    <div class="icons">
+                        <span><i class="ion-thumbsup"></i>Like</span>
+                        <span><i class="ion-chatbox"></i>Comment</span>
+                        <span><i class="ion-android-share"></i>Share</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="more_load">
+            <i class="fa fa-refresh fa-spin"></i> Loading...
+        </div>
+
+    </div>
+</body>
+</html>

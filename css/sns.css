@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E9EAED;
+}
+
+a:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+div.container {
+    width: 100%;
+    max-width:492px;
+    margin: 0px auto;
+}
+
+div.post {
+    margin-top: 10px;
+    border: 0.5px solid #DFE0E4;
+    border-radius:2px;
+    background-color:#fff;
+    min-height: 45px;
+    color:#9197A3;
+}
+
+div.post_header, div.post_body, div.post_footer {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+div.post_header {
+    font-weight:bold;
+    color: #373E4D;
+    font-size:13px;
+}
+
+div.post_header span.item {
+    cursor: pointer;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding:5px;
+    display:inline-block;
+}
+
+div.post_header span.item:first-child {
+    margin-left:-5px;
+}
+
+div.post_header span.item:hover {
+    background-color: #eee;
+}
+
+div.post_header span.item i {
+    padding:1px 4px;
+    color:#fff;
+    border-radius:2px;
+}
+
+span.item i.ion-edit {
+    background-color:#6E8FD3;
+}
+
+span.item i.ion-image {
+    background-color:#F6B278;
+}
+
+span.item i.ion-ios-albums {
+    background-color:#6B8ED1;
+}
+
+div.post_header span.horizontal_split {
+    height:100%;
+    border-right:1px solid #DCDEE3;
+    margin: 0px 10px;
+}
+
+div.post_body {
+    padding-top:13px;
+    padding-bottom:13px;
+    margin-bottom: 20px;
+}
+
+div.post_footer {
+    padding:0px;
+    height: 40px;
+}
+
+div.profile_pic {
+    width:40px;
+    height:40px;
+    float:left;
+    border:1px solid #BDC0C5;
+    clear: both;
+    margin-right:10px;
+}
+
+div.post_text {
+    margin-top:14px;
+
+}
+
+div.split {
+    border-top:0.5px solid #DCDEE3;
+    width:100%;
+    clear:both;
+}
+
+div.post_footer div.icons {
+    float: left;
+    height:100%;
+}
+
+div.post_footer div.buttons {
+    float: right;
+}
+
+div.post_footer div.icons i {
+    font-size:22px;
+    color:#B3B7BD;
+    padding: 6.5px 12px;
+    float: inherit;
+    cursor:pointer;
+    width:18px;
+    text-align: center;
+}
+
+div.post_footer div.icons i:hover {
+    background-color: #eee;
+}
+
+div.buttons {
+    padding-top:8px;
+    padding-right:10px;
+}
+
+div.buttons button {
+    border:1px solid #C5C6C8;
+    border-radius:3px;
+    font-weight:bold;
+    margin-left:6px;
+    height:25px;
+    padding: 0px 15px;
+    font-size:12px;
+    cursor: pointer;
+}
+
+button.white {
+    color:#4E5665;
+    background-color: #fff;
+}
+
+button.blue {
+    color:#F9FAFC;
+    background-color: #49659F;
+}
+
+div.item {
+    margin-top: 10px;
+    border: 0.5px solid #DFE0E4;
+    border-radius:2px;
+    background-color:#fff;
+    min-height: 45px;
+    color:#9197A3;
+    padding: 10px;
+}
+
+div.profile_name {
+    padding-top:3px;
+    color:#45619D;
+    font-weight: bold;
+    font-size:16px;
+}
+
+div.item_time_text {
+    padding-top:3px;
+    font-size:12px;
+}
+
+div.item_body_text {
+    color:#000;
+    line-height:1.4em;
+    font-size:15px;
+}
+
+span.more {
+    cursor:pointer;
+    color:blue;
+}
+
+div.item_body_stat {
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+div.item_body_stat span {
+    margin-right: 10px;
+}
+
+div.item_footer {
+    font-size:13px;
+    font-weight:bold;
+    color:#7F7F7F;
+}
+
+div.item_footer div.icons {
+    padding-top:10px;
+}
+
+div.item_footer div.icons i{
+    margin-right:5px;
+    color:#AFB4BD;
+}
+
+div.item_footer div.icons span {
+    margin-right:33px;
+    cursor: pointer;
+}
+
+div.item_footer div.icons span:hover {
+    text-decoration: underline;
+}
+
+img.scaledImageFitWidth {
+    width: 100%;
+}
+
+#more_load {
+    color:gray;
+    text-align: center;
+    margin: 15px 0px;
+}
