@@ -5,94 +5,251 @@
     <title>SNS게시판</title>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/sns.js"></script>
+    <link rel="stylesheet" href="css/sns_header.css" type="text/css">
+    <link rel="stylesheet" href="css/sns_nav.css" type="text/css">
+    <link rel="stylesheet" href="css/sns_ad.css" type="text/css">
     <link rel="stylesheet" href="css/sns.css" type="text/css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css" type="text/css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
 </head>
 <body>
-    <div class="container">
-        <div class="post">
-            <div class="post_header">
-                <span class="item"><i class="ion-edit"></i> Update Status</span>
-                <span class="horizontal_split"></span>
-                <span class="item"><i class="ion-image"></i> Add Photos/Video</span>
-                <span class="horizontal_split"></span>
-                <span class="item"><i class="ion-ios-albums"></i> Create Photo Album</span>
-            </div>
-            <div class="split"></div>
-            <div class="post_body">
-                <div class="profile_pic">
-                    <img src="http://bit.ly/1R7sh1v" width="40" height="40" alt="profile_pic">
-                </div>
-                <div class="post_text">
-                    What's on your mind?
-                </div>
-            </div>
-            <div class="split"></div>
-            <div class="post_footer">
-                <div class="icons">
-                    <i class="ion-camera"></i>
-                    <i class="ion-person-add"></i>
-                    <i class="ion-happy"></i>
-                    <i class="ion-location"></i>
-                </div>
-                <div class="buttons">
-                    <button class="white"><i class="ion-earth"></i> Public <i class="ion-arrow-down-b"></i></button>
-                    <button class="blue">Post</button>
-                </div>
+
+    <header>
+        <div class="container">
+            <h1>
+                <a class="_48pw" data-gt="{&quot;chrome_nav_item&quot;:&quot;logo_chrome&quot;}" href="https://www.facebook.com/?ref=logo">Facebook</a>
+            </h1>
+            <div class="form_find_friends">
+                Find friends...
             </div>
         </div>
+    </header>
 
 
 
-
-
-
-        <div class="items">
-            <div class="item" style="display:none;">
-                <div class="item_header">
-                    <div class="profile_pic">
-                        <img src="http://bit.ly/1KVP6Ww" width="40" height="40" alt="profile_pic">
-                    </div>
-                    <div class="profile_name">
-                        홍길동
-                    </div>
-                    <div class="item_time_text">
-                        24 mins · <i class="ion-earth"></i>
+    <content>
+        <div class="container">
+            <nav>
+                <div class="group profile">
+                    <div class="nav_menus">
+                        <div class="nav_menu" onclick="alert();"><i class="ion-person"></i> Jeon YoungHo</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Edit Profile</div>
                     </div>
                 </div>
-                <div class="item_body">
-                    <div class="item_body_text">
-                        <p>
-                            2010년 구글은 검열 문제 등으로 중국 정부와의 마찰을 빚다 중국에서 철수했었습니다. 그러다 2014년부터 다시 중국 시장에 진출하기 위해 노력했었는데요, 빠르면 3월부터 중국에서 다시 구글 플레이를 만나볼 수 있을 듯합니다.
-                            세계 최대의 스마트폰 시장으로 부상한 중국인 만큼, 구글 플레이의 중국 재진출 소식에 세계 IT 기업들의 걱정과 기대가 교차하고 있습니다.
-                            이러한 상황에서 중국 국내의 분위기를 가늠해볼 수 있는 귀한 글이 있기에 소개합니다....
-                            <span class="more">See More</span>
-                        </p>
-                    </div>
-                    <div class="item_body_images">
-                        <img class="scaledImageFitWidth img" src="http://bit.ly/20DiQJP" alt="Humans of Seoul's photo.">
-                    </div>
-                    <div class="item_body_stat">
-                        <span>6 Likes</span>
-                        <span>1 Share</span>
+                <div class="group favorites">
+                    <div class="group_title">FAVORITES</div>
+                    <div class="nav_menus">
+                        <div class="nav_menu b"><i class="ion-person"></i> News Feed</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Messages</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Events</div>
                     </div>
                 </div>
-                <div class="split"></div>
-                <div class="item_footer">
-                    <div class="icons">
-                        <span><i class="ion-thumbsup"></i>Like</span>
-                        <span><i class="ion-chatbox"></i>Comment</span>
-                        <span><i class="ion-android-share"></i>Share</span>
+                <div class="group apps">
+                    <div class="group_title">APPS</div>
+                    <div class="nav_menus">
+                        <div class="nav_menu"><i class="ion-person"></i> Games</div>
+                        <div class="nav_menu"><i class="ion-person"></i> On This Day</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Bejeweled Blitz</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Candy Crush Soda...</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Saved</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Suggest Edits</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Pokes</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Photos</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Find Friends</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Games Feed</div>
                     </div>
+                </div>
+                <div class="group friends">
+                    <div class="group_title">FRIENDS</div>
+                    <div class="nav_menus">
+                        <div class="nav_menu"><i class="ion-person"></i> Close Friends</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Family</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Daejeon Area</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Daejeon, Korea Area</div>
+                        <div class="nav_menu"><i class="ion-person"></i> (주)지플러스</div>
+                        <div class="nav_menu"><i class="ion-person"></i> 한남대학교</div>
+                        <div class="nav_menu"><i class="ion-person"></i> 동신고등학교</div>
+                        <div class="nav_menu"><i class="ion-person"></i> 동대전교회</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Acquaintances</div>
+                    </div>
+                </div>
+
+                <div class="group interests">
+                    <div class="group_title">INTERESTS</div>
+                    <div class="nav_menus">
+                        <div class="nav_menu"><i class="ion-person"></i> Pages and Public ...</div>
+                    </div>
+                </div>
+
+                <div class="group pages">
+                    <div class="group_title">PAGES</div>
+                    <div class="nav_menus">
+                        <div class="nav_menu"><i class="ion-person"></i> Pages Feed</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Like Pages</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Create Page</div>
+                    </div>
+                </div>
+
+                <div class="group developer">
+                    <div class="group_title">DEVELOPER</div>
+                    <div class="nav_menus">
+                        <div class="nav_menu"><i class="ion-person"></i> Manage Apps</div>
+                        <div class="nav_menu"><i class="ion-person"></i> Insights</div>
+                    </div>
+                </div>
+
+                <div class="group groups">
+                    <div class="group_title">GROUPS</div>
+                    <div class="nav_menus">
+                        <div class="nav_menu"><i class="ion-person"></i> Create Group</div>
+                    </div>
+                </div>
+
+                <div class="group events">
+                    <div class="group_title">EVENTS</div>
+                    <div class="nav_menus">
+                        <div class="nav_menu"><i class="ion-person"></i> Create Event</div>
+                    </div>
+                </div>
+            </nav>
+            <div class="post_group">
+                <div class="post">
+                    <div class="post_header">
+                        <span class="item"><i class="ion-edit"></i> Update Status</span>
+                        <span class="horizontal_split"></span>
+                        <span class="item"><i class="ion-image"></i> Add Photos/Video</span>
+                        <span class="horizontal_split"></span>
+                        <span class="item"><i class="ion-ios-albums"></i> Create Photo Album</span>
+                    </div>
+                    <div class="split"></div>
+                    <div class="post_body">
+                        <div class="profile_pic">
+                            <img src="http://bit.ly/1R7sh1v" width="40" height="40" alt="profile_pic">
+                        </div>
+                        <div class="post_text">
+                            What's on your mind?
+                        </div>
+                    </div>
+                    <div class="split"></div>
+                    <div class="post_footer">
+                        <div class="icons">
+                            <i class="ion-camera"></i>
+                            <i class="ion-person-add"></i>
+                            <i class="ion-happy"></i>
+                            <i class="ion-location"></i>
+                        </div>
+                        <div class="buttons">
+                            <button class="white"><i class="ion-earth"></i> Public <i class="ion-arrow-down-b"></i></button>
+                            <button class="blue">Post</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="items">
+                    <div class="item" style="display:none;">
+                        <div class="item_header">
+                            <div class="profile_pic">
+                                <img src="http://bit.ly/1KVP6Ww" width="40" height="40" alt="profile_pic">
+                            </div>
+                            <div class="profile_name">
+                                홍길동
+                            </div>
+                            <div class="item_time_text">
+                                24 mins · <i class="ion-earth"></i>
+                            </div>
+                        </div>
+                        <div class="item_body">
+                            <div class="item_body_text">
+                                <p>
+                                    2010년 구글은 검열 문제 등으로 중국 정부와의 마찰을 빚다 중국에서 철수했었습니다. 그러다 2014년부터 다시 중국 시장에 진출하기 위해 노력했었는데요, 빠르면 3월부터 중국에서 다시 구글 플레이를 만나볼 수 있을 듯합니다.
+                                    세계 최대의 스마트폰 시장으로 부상한 중국인 만큼, 구글 플레이의 중국 재진출 소식에 세계 IT 기업들의 걱정과 기대가 교차하고 있습니다.
+                                    이러한 상황에서 중국 국내의 분위기를 가늠해볼 수 있는 귀한 글이 있기에 소개합니다....
+                                    <span class="more">See More</span>
+                                </p>
+                            </div>
+                            <div class="item_body_images">
+                                <img class="scaledImageFitWidth img" src="http://bit.ly/20DiQJP" alt="Humans of Seoul's photo.">
+                            </div>
+                            <div class="item_body_stat">
+                                <span>6 Likes</span>
+                                <span>1 Share</span>
+                            </div>
+                        </div>
+                        <div class="split"></div>
+                        <div class="item_footer">
+                            <div class="icons">
+                                <span><i class="ion-thumbsup"></i>Like</span>
+                                <span><i class="ion-chatbox"></i>Comment</span>
+                                <span><i class="ion-android-share"></i>Share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="more_load">
+                    <i class="fa fa-refresh fa-spin"></i> Loading...
                 </div>
             </div>
-        </div>
 
-        <div id="more_load">
-            <i class="fa fa-refresh fa-spin"></i> Loading...
-        </div>
 
-    </div>
+            <ad>
+                <div class="groups_title">SUGGESTED GROUPS</div>
+                <div class="ad_groups">
+                    <div class="ad_group">
+                        <div class="ad_group_image">
+                            <img src="http://bit.ly/1KXMmYS" alt="ad" height="152"/>
+                            <div class="ad_mask"></div>
+                        </div>
+                        <div class="ad_group_contents">
+                            <div class="title">
+                                <div class="main_title b">필립드러닝(Flipped Learning) 포럼</div>
+                                <div class="sub_title">2,267 members</div>
+                            </div>
+                            <div class="ad_group_btn_join">
+                                <button class="b"><i class="ion-plus"></i> Join</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad_group">
+                        <div class="ad_group_image">
+                            <img src="http://bit.ly/1KXMmYS" alt="ad" height="152"/>
+                            <div class="ad_mask"></div>
+                        </div>
+                        <div class="ad_group_contents">
+                            <div class="title">
+                                <div class="main_title b">필립드러닝(Flipped Learning) 포럼</div>
+                                <div class="sub_title">2,267 members</div>
+                            </div>
+                            <div class="ad_group_btn_join">
+                                <button class="b"><i class="ion-plus"></i> Join</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad_group">
+                        <div class="ad_group_image">
+                            <img src="http://bit.ly/1KXMmYS" alt="ad" height="152"/>
+                            <div class="ad_mask"></div>
+                        </div>
+                        <div class="ad_group_contents">
+                            <div class="title">
+                                <div class="main_title b">필립드러닝(Flipped Learning) 포럼</div>
+                                <div class="sub_title">2,267 members</div>
+                            </div>
+                            <div class="ad_group_btn_join">
+                                <button class="b"><i class="ion-plus"></i> Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="groups_see_all">See All</div>
+            </ad>
+
+        </div>
+    </content>
 </body>
 </html>

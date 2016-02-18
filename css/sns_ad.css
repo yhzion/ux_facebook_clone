@@ -1,0 +1,87 @@
+ad {
+    width:254px;
+    display: block;
+    position:fixed;
+    font-size:13px;
+    border: 1px solid red;
+    top:53px;
+    margin-left:685px;
+
+    border: 0.5px solid #DFE0E4;
+    border-radius:2px;
+    background-color:#fff;
+    min-height: 45px;
+    color:#9197A3;
+    padding:12px;
+}
+
+ad .groups_title {
+    font-weight:bold;
+}
+
+ad .ad_group {
+    margin-top:13px;
+    border: 0.5px solid #DFE0E4;
+    border-bottom-width: 1.5px;
+}
+
+ad .ad_group_image {
+    width:252px;
+    height:122px;
+    display:block;
+    overflow: hidden;
+}
+
+ad .ad_group_contents {
+    padding:10px;
+    font-size:12px;
+    position:relative;
+}
+
+ad .ad_group_contents .title {
+    width:162px;
+    display:inline-block;
+}
+
+ad .ad_group_contents .main_title {
+    color:#3B5998;
+}
+
+ad .ad_group_contents .sub_title {
+    margin-top:3px;
+}
+
+ad .ad_group_contents .ad_group_btn_join {
+    width:60px;
+    text-align: right;
+    float: right;
+}
+
+ad .ad_group_contents .ad_group_btn_join button {
+    padding:6px;
+    cursor: pointer;
+    border-radius:2px;
+    border:1px solid #C5C6C8;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f7+0,ffffff+92,e5e5e5+100 */
+    background: #f5f6f7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f5f6f7 0%, #ffffff 92%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f5f6f7 0%,#ffffff 92%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f5f6f7 0%,#ffffff 92%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f7', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+
+div.ad_mask {
+    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/JUcbdHz2dUA.png");
+    background-repeat: repeat-x;
+    height: 50px;
+    position: relative;
+    top: -80px;
+}
+
+div.groups_see_all {
+    padding-top:8px;
+    padding-left:2px;
+    color:#3B5998;
+}

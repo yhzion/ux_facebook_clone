@@ -6,7 +6,7 @@ $(function(){
             for(var i=0 ; i<5 ; i++) {
                 $('div.items').append($('div.item:first-child').clone().show());
             }
-        }, 1000);
+        }, 300);
     };
 
     moreLoad();

@@ -1,7 +1,12 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     background-color: #E9EAED;
+    height:100%;
+}
+
+.b {
+    font-weight: bold;
 }
 
 a:focus {
@@ -16,14 +21,23 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-div.container {
+content {
     width: 100%;
+}
+
+content div.container {
+    width:965px;
+    margin:0px auto;
+    margin-top:53px;
+}
+
+div.post_group {
     max-width:492px;
-    margin: 0px auto;
+    margin-left:183px;
+    display:block;
 }
 
 div.post {
-    margin-top: 10px;
     border: 0.5px solid #DFE0E4;
     border-radius:2px;
     background-color:#fff;
@@ -79,7 +93,7 @@ span.item i.ion-ios-albums {
 div.post_header span.horizontal_split {
     height:100%;
     border-right:1px solid #DCDEE3;
-    margin: 0px 10px;
+    margin: 0 5px;
 }
 
 div.post_body {
