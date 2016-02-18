@@ -9,11 +9,18 @@ html, body {
     font-weight: bold;
 }
 
-a:focus {
-    outline: none;
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block; /* For Firefox */
+    line-height: 1em;
+    color:#9197A3;
 }
 
-button:focus {
+[contenteditable=true]:empty:focus:before {
+    color: #bcc2ce;
+}
+
+*:focus {
     outline: none;
 }
 
@@ -100,6 +107,7 @@ div.post_body {
     padding-top:13px;
     padding-bottom:13px;
     margin-bottom: 20px;
+    min-height:20px;
 }
 
 div.post_footer {
@@ -118,7 +126,14 @@ div.profile_pic {
 
 div.post_text {
     margin-top:14px;
-
+    margin-bottom:14px;
+    float:right;
+    width:410px;
+    font-size:15px;
+    color:#000;
+    line-height: 1.4em;
+    overflow: hidden;
+    cursor:text;
 }
 
 div.split {
@@ -250,4 +265,5 @@ img.scaledImageFitWidth {
     color:gray;
     text-align: center;
     margin: 15px 0px;
+    cursor: pointer;
 }

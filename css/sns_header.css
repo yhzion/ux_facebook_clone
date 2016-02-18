@@ -40,7 +40,8 @@ header h1 {
     display: none !important;
 }
 
-header .form_find_friends {
+header .form_find_friends_wrap {
+    padding: 3px 8px;
     width:50%;
     max-width:415px;
     height:19px;
@@ -48,7 +49,67 @@ header .form_find_friends {
     background-color: #fff;
     margin-top:7px;
     border-radius: 4px;
-    padding:3px 8px;
     font-size: 15px;
     color:#999FAA;
+    cursor:text;
+}
+
+header .form_find_friends {
+    color:#000;
+    margin-top:3px;
+    overflow: hidden;
+}
+
+header .header_menu_group {
+    height:23px;
+    min-width: 398px;
+    float: right;
+    margin-top:9px;
+    line-height: 25px;
+    color:#F6F7F9;
+    font-size:12px;
+    font-weight: bold;
+}
+
+header .header_menu_group span:first-child {
+    margin-left:0px;
+    padding:9px 0px;
+}
+
+header .header_menu_group span {
+    margin-top:-5px;
+    padding-left:9px;
+    padding-right:9px;
+}
+
+header .header_menu_group img{
+    width:19px;
+    height:19px;
+    border-radius: 3px;
+    border:1px solid #334875;
+    vertical-align: middle;
+    margin-top:-3px;
+}
+
+header div.horizontal_split {
+    height:100%;
+    border-right:1px solid #2F487B;
+    margin: 0 0;
+    display: inline;
+}
+
+header .header_menu_group > div:first-child{
+    float: left;
+    margin-left: 0px;
+    font-size:12px;
+}
+
+header .header_menu_group > div{
+    float: left;
+    margin-left: 10px;
+}
+
+.header_icons {
+    color:#23356B;
+    font-size:24px;
 }
