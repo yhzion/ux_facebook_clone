@@ -111,5 +111,26 @@ header .header_menu_group > div{
 
 .header_icons {
     color:#23356B;
+    padding:0 5px;
+}
+
+.header_icons:last-child {
+    padding-right: 0;
+}
+
+.header_icons i {
+    padding:0 5px;
+    cursor: pointer;
+}
+
+.header_icons i:hover {
+    color: #171f3e;
+}
+
+div.header_menu_group .l {
     font-size:24px;
+}
+
+div.header_menu_group .s {
+    font-size:14px;
 }
