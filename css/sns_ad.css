@@ -8,7 +8,7 @@ ad {
     margin-left:685px;
 
     border: 0.5px solid #DFE0E4;
-    border-radius:2px;
+    border-radius:3px;
     background-color:#fff;
     min-height: 45px;
     color:#9197A3;
@@ -60,7 +60,7 @@ ad .ad_group_contents .ad_group_btn_join {
 ad .ad_group_contents .ad_group_btn_join button {
     padding:6px;
     cursor: pointer;
-    border-radius:2px;
+    border-radius:3px;
     border:1px solid #C5C6C8;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f7+0,ffffff+92,e5e5e5+100 */

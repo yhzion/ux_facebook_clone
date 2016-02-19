@@ -46,7 +46,7 @@ div.post_group {
 
 div.post {
     border: 0.5px solid #DFE0E4;
-    border-radius:2px;
+    border-radius:3px;
     background-color:#fff;
     min-height: 45px;
     color:#9197A3;
@@ -82,7 +82,7 @@ div.post_header span.item:hover {
 div.post_header span.item i {
     padding:1px 4px;
     color:#fff;
-    border-radius:2px;
+    border-radius:3px;
 }
 
 span.item i.ion-edit {
@@ -194,7 +194,7 @@ button.blue {
 div.item {
     margin-top: 10px;
     border: 0.5px solid #DFE0E4;
-    border-radius:2px;
+    border-radius:3px;
     background-color:#fff;
     min-height: 45px;
     color:#9197A3;

@@ -1,0 +1,49 @@
+chat {
+    position:fixed;
+    right:15px;
+    bottom:-2px;
+    width:276px;
+    height:29px;
+    border: 1px solid rgba(29, 49, 91, .3);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: none;
+}
+
+chat #chat_header {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #f6f7f8;
+    cursor: pointer;
+    padding:6px 12px;
+    height:17px;
+}
+
+chat #chat_header:hover {
+    background-color: #fff;
+}
+
+
+
+chat #chat_header span.title {
+    font-size:12px;
+    font-weight:bold;
+    float: left;
+}
+
+chat #chat_header span.icons {
+    font-size:14px;
+    float: right;
+    color: #646976;
+}
+
+chat #chat_header span.icons i {
+    padding:0 2px;
+}
+
+
+chat i.green {
+    color:#009E1D;
+    font-size: 10px;
+    vertical-align: middle;
+}
