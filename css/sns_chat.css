@@ -1,13 +1,18 @@
 chat {
     position:fixed;
     right:15px;
-    bottom:-2px;
+    bottom:-322px;
     width:276px;
-    height:29px;
+    height:347px;
     border: 1px solid rgba(29, 49, 91, .3);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     box-shadow: none;
+}
+
+chat.chaton {
+    bottom:-2px;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.4);
 }
 
 chat #chat_header {
@@ -19,10 +24,18 @@ chat #chat_header {
     height:17px;
 }
 
+chat.chaton #chat_header {
+    background-color: #4E69A7;
+    color:#fff;
+}
+
 chat #chat_header:hover {
     background-color: #fff;
 }
 
+chat.chaton #chat_header:hover {
+    background-color: #4E69A7;
+}
 
 
 chat #chat_header span.title {
@@ -37,6 +50,14 @@ chat #chat_header span.icons {
     color: #646976;
 }
 
+chat.chaton #chat_header span.title i {
+    display:none;
+}
+
+chat.chaton #chat_header span.icons {
+    color: #B5C0D8;
+}
+
 chat #chat_header span.icons i {
     padding:0 2px;
 }
@@ -46,4 +67,74 @@ chat i.green {
     color:#009E1D;
     font-size: 10px;
     vertical-align: middle;
+}
+
+chat #chat_body {
+    height:283px;
+    background-color:#F6F7F8;
+}
+
+chat #chat_footer {
+    height:35px;
+    background-color:#FFF;
+    border-top:1px solid #DADFEB;
+    padding:6px 12px;
+}
+
+chat #chat_footer > div {
+    display:inline-block;
+    height:13px;
+}
+
+chat #chat_footer div.icon {
+    vertical-align: super;
+}
+
+chat #chat_footer > div.text_field {
+    width:220px;
+    overflow: hidden;
+    margin:6px 0px;
+    font-size:13px;
+}
+
+chat #chat_footer i {
+    color:#BDC1C9;
+}
+
+chat #chat_body div.chat_friend {
+    width:264px;
+    height:37px;
+    padding-top:3px;
+    padding-bottom:1px;
+    padding-left:12px;
+    cursor: pointer;
+}
+
+chat #chat_body div.chat_friend:hover {
+    background-color: #DDDDDD;
+}
+
+chat #chat_body div.chat_friend > div {
+    display: inline-block;
+    height:32px;
+}
+
+chat #chat_body div.chat_friend .profile_pic {
+    width:32px;
+    border:1px solid #D9D8D9;
+}
+
+chat #chat_body div.chat_friend .profile_name {
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000;
+}
+
+chat #chat_body div.chat_friend .last_login {
+    float: right;
+    padding-right: 13px;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #9298A4;
 }
