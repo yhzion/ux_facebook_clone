@@ -5,7 +5,9 @@ html, body {
     height: 100%;
 }
 
-body { font-family: AppleGothic, 'Noto Sans', sans-serif; }
+body {
+    font-family: 'Apple Gothic', 'Noto Sans', sans-serif;
+}
 
 .b {
     font-weight: bold;
