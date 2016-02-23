@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install --production",
-    "postinstall": "node_modules/.bin/bower install;echo postinstall time; ./node_modules/grunt-cli/bin/grunt",
+    "postinstall": "node_modules/.bin/bower install;./node_modules/grunt-cli/bin/grunt",
     "start": "node web.js"
   },
   "repository": {
