@@ -5,14 +5,14 @@ $(function(){
     var moreLoad = function() {
         for(var i=0 ; i<5 ; i++) {
             $.ajax({
-                url: "http://www.randomtext.me/api/gibberish/p-1/25-75",
+                url: "https://www.randomtext.me/api/gibberish/p-1/25-75",
                 dataType:"json",
                 data: {
                     a: 1
                 }
             }).done(function(result) {
                 var template = $('div.item:first-child').clone().show();
-                template.find('img.scaledImageFitWidth').attr('src','http://lorempixel.com/470/313?a='+ imgIdx++);
+                template.find('img.scaledImageFitWidth').attr('src','https://lorempixel.com/470/313?a='+ imgIdx++);
                 template.find('.item_body_text').html(result.text_out);
 
                 $.ajax({
