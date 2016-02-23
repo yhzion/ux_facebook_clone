@@ -1,8 +1,6 @@
 $(function () {
 
-    var random_number = function () {
-        var max = 500;
-        var min = 1;
+    var random_number = function (min, max) {
         var num = Math.floor(Math.random() * (max - min)) + min;
         return num;
     };
@@ -22,18 +20,14 @@ $(function () {
                 var template = $('div.item:first-child').clone().show();
                 template.find('img.scaledImageFitWidth').attr('src', 'http://lorempixel.com/470/313?a=' + imgIdx++);
                 template.find('.item_body_text').html(result.text_out);
-                template.find('.item_body_stat span.like').text(random_number() + " Likes");
-                template.find('.item_body_stat span.share').text(random_number() + " Share");
+                template.find('.item_body_stat span.like').text(random_number(1,500) + " Likes");
+                template.find('.item_body_stat span.share').text(random_number(1,500) + " Share");
+                template.find(".profile_pic img").attr("src", 'http://lorempixel.com/40/40?a=' + imgIdx++);
+                template.find("span.minute").text(imgIdx + " mins");
+                template.find(".profile_name").text(result.text_out.replace(/(<([^>]+)>)/gi, "").split(/\s+/)[0]);
 
-                $.ajax({
-                    url: 'https://randomuser.me/api?a=' + i,
-                    dataType: 'json',
-                    success: function (data) {
-                        template.find(".profile_name").text(data.results[0].user.name.first);
-                        template.find(".profile_pic img").attr("src", data.results[0].user.picture.thumbnail);
-                        $('div.items').append(template);
-                    }
-                });
+
+                $('div.items').append(template);
             });
         }
     };
@@ -53,7 +47,7 @@ $(function () {
                 console.log(template);
                 template.find('.ad_group_image img').attr('src', 'http://lorempixel.com/252/152?a=' + imgIdx++);
                 template.find('div.main_title').text(result.text_out.replace(/(<([^>]+)>)/gi, ""));
-                template.find('div.sub_title').text(random_number() + " members");
+                template.find('div.sub_title').text(random_number(1,500) + " members");
 
                 $('div.ad_groups').append(template);
             });
