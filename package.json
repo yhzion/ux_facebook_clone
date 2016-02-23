@@ -22,9 +22,7 @@
     "express": "^4.13.4",
     "bower": "^1.7.7",
     "grunt": "~0.4.1",
-    "grunt-cli": "0.1.11"
-  },
-  "devDependencies": {
+    "grunt-cli": "0.1.11",
     "load-grunt-tasks": "~0.1.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
