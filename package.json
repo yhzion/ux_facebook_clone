@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm install",
+    "prestart": "npm install --production",
     "postinstall": "node_modules/.bin/bower install;node_modules/.bin/grunt",
     "start": "node web.js"
   },
