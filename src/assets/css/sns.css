@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #E9EAED;
-    height:100%;
+    height: 100%;
 }
 
 .b {
@@ -10,10 +10,10 @@ html, body {
 }
 
 [contenteditable=true]:empty:before {
-    content: attr(placeholder);
+    content: attr(data-placeholder);
     display: block; /* For Firefox */
     line-height: 1em;
-    color:#9197A3;
+    color: #9197A3;
 }
 
 [contenteditable=true]:empty:focus:before {
@@ -33,23 +33,23 @@ content {
 }
 
 content div.container {
-    width:965px;
-    margin:0px auto;
-    margin-top:53px;
+    width: 965px;
+    margin: 0 auto;
+    margin-top: 53px;
 }
 
 div.post_group {
-    max-width:492px;
-    margin-left:183px;
-    display:block;
+    max-width: 492px;
+    margin-left: 183px;
+    display: block;
 }
 
 div.post {
-    border: 0.5px solid #DFE0E4;
-    border-radius:3px;
-    background-color:#fff;
+    border: 1px solid #DFE0E4;
+    border-radius: 3px;
+    background-color: #fff;
     min-height: 45px;
-    color:#9197A3;
+    color: #9197A3;
 }
 
 div.post_header, div.post_body, div.post_footer {
@@ -58,21 +58,21 @@ div.post_header, div.post_body, div.post_footer {
 }
 
 div.post_header {
-    font-weight:bold;
+    font-weight: bold;
     color: #373E4D;
-    font-size:13px;
+    font-size: 13px;
 }
 
 div.post_header span.item {
     cursor: pointer;
-    margin-top:5px;
-    margin-bottom:5px;
-    padding:5px;
-    display:inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    display: inline-block;
 }
 
 div.post_header span.item:first-child {
-    margin-left:-5px;
+    margin-left: -5px;
 }
 
 div.post_header span.item:hover {
@@ -80,71 +80,71 @@ div.post_header span.item:hover {
 }
 
 div.post_header span.item i {
-    padding:1px 4px;
-    color:#fff;
-    border-radius:3px;
+    padding: 1px 4px;
+    color: #fff;
+    border-radius: 3px;
 }
 
 span.item i.ion-edit {
-    background-color:#6E8FD3;
+    background-color: #6E8FD3;
 }
 
 span.item i.ion-image {
-    background-color:#F6B278;
+    background-color: #F6B278;
 }
 
 span.item i.ion-ios-albums {
-    background-color:#6B8ED1;
+    background-color: #6B8ED1;
 }
 
 div.post_header span.horizontal_split {
-    height:100%;
-    border-right:1px solid #DCDEE3;
-    margin: 0 5px;
+    height: 100%;
+    border-right: 1px solid #DCDEE3;
+    margin: 0 3px;
 }
 
 div.post_body {
-    padding-top:13px;
-    padding-bottom:13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     margin-bottom: 20px;
-    min-height:20px;
+    min-height: 20px;
 }
 
 div.post_footer {
-    padding:0px;
+    padding: 0;
     height: 40px;
 }
 
 div.profile_pic {
-    width:40px;
-    height:40px;
-    float:left;
-    border:1px solid #BDC0C5;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: 1px solid #BDC0C5;
     clear: both;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 div.post_text {
-    margin-top:14px;
-    margin-bottom:14px;
-    float:right;
-    width:410px;
-    font-size:15px;
-    color:#000;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    float: right;
+    width: 410px;
+    font-size: 15px;
+    color: #000;
     line-height: 1.4em;
     overflow: hidden;
-    cursor:text;
+    cursor: text;
 }
 
 div.split {
-    border-top:0.5px solid #DCDEE3;
-    width:100%;
-    clear:both;
+    border-top: 1px solid #DCDEE3;
+    width: 100%;
+    clear: both;
 }
 
 div.post_footer div.icons {
     float: left;
-    height:100%;
+    height: 100%;
 }
 
 div.post_footer div.buttons {
@@ -152,14 +152,14 @@ div.post_footer div.buttons {
 }
 
 div.post_footer div.icons i {
-    font-size:22px;
-    color:#B3B7BD;
-    padding: 6.5px 12px;
+    font-size: 22px;
+    color: #B3B7BD;
+    padding: 6px 12px;
     float: inherit;
-    cursor:pointer;
-    width:18px;
+    cursor: pointer;
+    width: 18px;
     text-align: center;
-    height:27px;
+    height: 27px;
 }
 
 div.post_footer div.icons i:hover {
@@ -167,67 +167,67 @@ div.post_footer div.icons i:hover {
 }
 
 div.buttons {
-    padding-top:8px;
-    padding-right:10px;
+    padding-top: 8px;
+    padding-right: 10px;
 }
 
 div.buttons button {
-    border:1px solid #C5C6C8;
-    border-radius:3px;
-    font-weight:bold;
-    margin-left:6px;
-    height:25px;
-    padding: 0px 15px;
-    font-size:12px;
+    border: 1px solid #C5C6C8;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-left: 6px;
+    height: 25px;
+    padding: 0 15px;
+    font-size: 12px;
     cursor: pointer;
 }
 
 button.white {
-    color:#4E5665;
+    color: #4E5665;
     background-color: #fff;
 }
 
 button.blue {
-    color:#F9FAFC;
+    color: #F9FAFC;
     background-color: #49659F;
 }
 
 div.item {
     margin-top: 10px;
-    border: 0.5px solid #DFE0E4;
-    border-radius:3px;
-    background-color:#fff;
+    border: 1px solid #DFE0E4;
+    border-radius: 3px;
+    background-color: #fff;
     min-height: 45px;
-    color:#9197A3;
+    color: #9197A3;
     padding: 10px;
 }
 
 div.profile_name {
-    padding-top:3px;
-    color:#45619D;
+    padding-top: 3px;
+    color: #45619D;
     font-weight: bold;
-    font-size:16px;
+    font-size: 16px;
 }
 
 div.item_time_text {
-    padding-top:3px;
-    font-size:12px;
+    padding-top: 3px;
+    font-size: 12px;
 }
 
 div.item_body_text {
-    color:#000;
-    line-height:1.4em;
-    font-size:15px;
+    color: #000;
+    line-height: 1.4em;
+    font-size: 15px;
 }
 
 span.more {
-    cursor:pointer;
-    color:blue;
+    cursor: pointer;
+    color: blue;
 }
 
 div.item_body_stat {
-    font-size:13px;
-    margin-bottom:10px;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
 div.item_body_stat span {
@@ -235,22 +235,22 @@ div.item_body_stat span {
 }
 
 div.item_footer {
-    font-size:13px;
-    font-weight:bold;
-    color:#7F7F7F;
+    font-size: 13px;
+    font-weight: bold;
+    color: #7F7F7F;
 }
 
 div.item_footer div.icons {
-    padding-top:10px;
+    padding-top: 10px;
 }
 
-div.item_footer div.icons i{
-    margin-right:5px;
-    color:#AFB4BD;
+div.item_footer div.icons i {
+    margin-right: 5px;
+    color: #AFB4BD;
 }
 
 div.item_footer div.icons span {
-    margin-right:33px;
+    margin-right: 33px;
     cursor: pointer;
 }
 
@@ -263,8 +263,8 @@ img.scaledImageFitWidth {
 }
 
 #more_load {
-    color:gray;
+    color: gray;
     text-align: center;
-    margin: 15px 0px;
+    margin: 15px 0;
     cursor: pointer;
 }
