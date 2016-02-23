@@ -13,7 +13,7 @@ $(function(){
     var moreLoad = function() {
         for(var i=0 ; i<5 ; i++) {
             $.ajax({
-                url: "https://www.randomtext.me/api/gibberish/p-1/25-75",
+                url: "https://www.randomtext.me/api/gibberish/p-1/25-50",
                 dataType:"json",
                 data: {
                     a: i
