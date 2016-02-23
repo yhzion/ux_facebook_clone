@@ -2,14 +2,15 @@
 (function() {
     var express = require('express');
     var app = express();
-    app.set('views', './app');
+    app.set('views', './dist');
     app.set('view engine', 'html');
 
-    app.use(express.static(__dirname + '/app'));
+    app.use(express.static(__dirname + '/dist'));
 
     var port = Number(process.env.PORT || 8000);
 
     app.listen(port, function () {
-        console.log('Example app listening on port '+port);
+        console.log('ux-facebook-clone app listening on port '+port);
     });
 }).call(this);
+
