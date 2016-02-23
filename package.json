@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "bower install",
-    "postinstall": "grunt",
     "prestart": "npm install",
     "start": "node web.js"
   },
